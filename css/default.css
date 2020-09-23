@@ -7,7 +7,6 @@
 	{
 		margin: 0px;
 		padding: 0px;
-		background: #261300 url(images/overlay.png) repeat;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 12pt;
 		font-weight: 400;
@@ -423,7 +422,7 @@
 
 	#wrapper2
 	{
-		background: #DC572E;
+		/*background: #DC572E;*/
 	}
 
 	#wrapper3
@@ -679,5 +678,3 @@
 	{
 		border-top-color: #292929;
 	}
-
-	
