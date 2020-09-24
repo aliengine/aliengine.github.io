@@ -30,4 +30,9 @@ jobs:
           log_level: WARNING
           css: true
           action_debug: false
-
+          
+      # Upload generated report
+      - uses: actions/upload-artifact@v2
+        with:
+          name: log
+          path: log.log
