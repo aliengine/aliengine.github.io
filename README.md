@@ -12,7 +12,7 @@ Get detailed information on thie file [CONTRIBUTE.md](CONTRIBUTE.md)
 
 ## License
 
-Creative Commons Attribution 3.0 Unported [LICENSE]
+Creative Commons Attribution 3.0 Unported [LICENSE](LICENSE)
 
 ----
 
