@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 @font-face
 {
@@ -56,7 +56,7 @@
 			-moz-font-smoothing: antialiased;
 			-ms-font-smoothing: antialiased;
 			-o-font-smoothing: antialiased;
-			font-smoothing: antialiased;
+			/*font-smoothing: antialiased;*/
 			-webkit-font-feature-settings: "liga" 1, "dlig" 1;
 			-moz-font-feature-settings: "liga=1, dlig=1";
 			-ms-font-feature-settings: "liga" 1, "dlig" 1;
