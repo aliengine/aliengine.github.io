@@ -1,5 +1,7 @@
 # aliengine.github.io
 
+![CI](https://github.com/aliengine/aliengine.github.io/workflows/CI/badge.svg)
+
 Public website
 
 * https://aliengine.net
