@@ -1,6 +1,6 @@
 # aliengine.github.io
 
-![CI](https://github.com/aliengine/aliengine.github.io/workflows/CI/badge.svg)
+[![CI](https://github.com/aliengine/aliengine.github.io/workflows/CI/badge.svg)](https://github.com/aliengine/aliengine.github.io/actions)
 
 Public website
 
