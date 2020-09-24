@@ -13,7 +13,6 @@ body {
     color: #000000;
 }
 
-
 h1, h2, h3 {
     margin: 0;
     padding: 0;
@@ -350,24 +349,12 @@ ul.contact li a:before {
     color: #FFF;
 }
 
-
-/*********************************************************************************/
-/* Banner                                                                        */
-/*********************************************************************************/
-
-#banner {
-}
-
 /*********************************************************************************/
 /* Wrapper                                                                       */
 /*********************************************************************************/
 
 #wrapper1 {
     background: #242424;
-}
-
-#wrapper2 {
-    /*background: #DC572E;*/
 }
 
 #wrapper3 {
@@ -407,27 +394,6 @@ ul.contact li a:before {
 }
 
 /*********************************************************************************/
-/* Page                                                                          */
-/*********************************************************************************/
-
-#page {
-}
-
-/*********************************************************************************/
-/* Content                                                                       */
-/*********************************************************************************/
-
-#content {
-}
-
-/*********************************************************************************/
-/* Sidebar                                                                       */
-/*********************************************************************************/
-
-#sidebar {
-}
-
-/*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
 
@@ -461,26 +427,6 @@ ul.contact li a:before {
 #copyright a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
-}
-
-/*********************************************************************************/
-/* Newsletter                                                                    */
-/*********************************************************************************/
-
-#newsletter {
-    overflow: hidden;
-    padding: 8em 0em;
-    background: #EDEDED;
-    text-align: center;
-}
-
-#newsletter .title h2 {
-    color: rgba(0, 0, 0, 0.8);
-}
-
-#newsletter .content {
-    width: 600px;
-    margin: 0px auto;
 }
 
 /*********************************************************************************/
@@ -810,13 +756,13 @@ ul.contact li a:before {
 /* buttons */
 .btn {
     color: white;
-    display:inline-block;
-    margin:0;
-    text-transform:uppercase;
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 .btn:after {
-    display:block;
+    display: block;
     content: '';
     border-bottom: solid 1px white;
     transform: scaleX(0);
@@ -830,4 +776,47 @@ ul.contact li a:before {
 .btn.u-eff:hover:after {
     transform: scaleX(1);
     transform-origin: 0% 50%;
+}
+
+/***************************
+*    Device Breakpoints    *
+****************************/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 600px;
+        padding: 10px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        padding: 10px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 990px;
+        padding: 10px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+        padding: 10px;
+    }
 }
