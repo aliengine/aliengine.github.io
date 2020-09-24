@@ -25,4 +25,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: HTML5 Validator
         uses: Cyb3r-Jak3/html5validator-action@v0.4.2
+        with:
+          root: .
+          log_level: WARNING
+          css: true
+          action_debug: false
 
