@@ -10,7 +10,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 12pt;
     font-weight: 400;
-    color: #000000;
+    color: #042255cf;
 }
 
 h1, h2, h3 {
@@ -222,15 +222,16 @@ ul.contact li a:before {
 .button {
     display: inline-block;
     margin-top: 2em;
-    padding: 1em 2em 1em 2em;
+    padding: 0.5em 1.2em 0.5em 1.2em;
     background: #3ca1fa;
     letter-spacing: 0.20em;
     line-height: 1.8em;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.2em;
     color: #FFF;
+    border-radius: 15px 0 15px 0;
 }
 
 .button:before {
@@ -266,7 +267,7 @@ ul.contact li a:before {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1.1em;
-    color: #6F6F6F;
+    color: #0C44A7;
 }
 
 /*********************************************************************************/
@@ -293,9 +294,11 @@ ul.contact li a:before {
 /*********************************************************************************/
 
 #logo {
-    padding: 5em 0em;
+    padding: 0em 0em;
     text-align: center;
     color: white;
+    float: left;
+    display: flex;
 }
 
 #logo h1 {
@@ -312,12 +315,20 @@ ul.contact li a:before {
     font-weight: bold;
 }
 
-
+.alilogo {
+    background-image: url('../images/AliengineLogo2.png');
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 69px;
+    float: left;
+}
 /*********************************************************************************/
 /* Menu                                                                          */
 /*********************************************************************************/
 
 #menu {
+    float: right;
+    padding: 1em 0em;
 }
 
 #menu ul {
@@ -438,7 +449,7 @@ ul.contact li a:before {
 
 #portfolio .box {
     text-align: center;
-    color: rgba(0, 0, 0, 0.5);
+    color: #042255cf;
 }
 
 #portfolio h3 {
@@ -446,7 +457,7 @@ ul.contact li a:before {
     padding-bottom: 1em;
     text-transform: uppercase;
     font-size: 1em;
-    color: rgba(0, 0, 0, 0.6);
+    color: #042255;
 }
 
 #portfolio .title {
@@ -454,7 +465,7 @@ ul.contact li a:before {
 }
 
 #portfolio .title h2 {
-    color: rgba(0, 0, 0, 0.8);
+    color: #0C44A7;
 }
 
 .column1,
@@ -524,17 +535,17 @@ ul.contact li a:before {
     font-size: 1.60em;
     font-weight: 900;
     font-family: 'Open Sans', sans-serif;
-    color: #261300;
+    color: #0C44A7;
 }
 
 #three-column .title .byline {
     padding-top: 0.50em;
     font-size: 0.90em;
-    color: #858585;
+    color: #042255cf;
 }
 
 #three-column .arrow-down {
-    border-top-color: #292929;
+    border-top-color: #0C44A7;
 }
 
 /**************************
