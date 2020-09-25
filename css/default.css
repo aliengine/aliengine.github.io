@@ -3,7 +3,6 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 body {
@@ -287,6 +286,12 @@ ul.contact li a:before {
     position: relative
 }
 
+#header-wrapper {
+    height: 90px;
+    transition: background-color 500ms;
+    z-index: 90;
+}
+
 #header {
     z-index: 100;
     position: relative;
@@ -392,7 +397,7 @@ ul.contact li a:before {
     width: auto;
     padding: 8em 100px 8em 100px;
     text-align: center;
-    color: rgb(4 34 85 / 79%);
+    color: rgb(4 34 85);
 }
 
 #welcome .content {
@@ -864,7 +869,14 @@ ul.contact li a:before {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    .sticky {
+        position: fixed !important;
+        top: 0;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 105% !important;
+        background-color: rgba(0,0,0,.75);
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

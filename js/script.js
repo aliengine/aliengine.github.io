@@ -11,3 +11,21 @@ function topMenu() {
         setTimeout(function () { menu.className = "" }, 260);
     }
 }
+
+window.onload = function() {
+    window.onscroll = function () {
+        onScroll()
+    };
+}
+
+const navbar = document.getElementById("header-wrapper");
+let sticky = navbar.offsetTop + 1;
+
+function onScroll() {
+    console.log(sticky, window.pageYOffset)
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
