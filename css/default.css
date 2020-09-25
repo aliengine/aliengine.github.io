@@ -457,6 +457,7 @@ ul.contact li a:before {
 #portfolio .box {
     text-align: center;
     color: rgb(4 34 85);
+    background: #dedede;
 }
 
 #portfolio h3 {
