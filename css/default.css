@@ -234,6 +234,12 @@ ul.contact li a:before {
     border-radius: 15px 0 15px 0;
 }
 
+.button:hover {
+    background: linear-gradient(-45deg, #1b23ad, #9ad7f3, #23a6d5, #0064ff);
+    background-size: 600% 600%;
+    animation: gradient 1s linear;
+}
+
 .button:before {
     display: inline-block;
     background: #8DCB89;
@@ -768,7 +774,7 @@ ul.contact li a:before {
 }
 
 .waveAnimation .waveMiddle {
-    animation: move_wave 10s linear infinite;
+    animation: move_wave 60s linear infinite;
 }
 
 .waveBottom {
@@ -776,7 +782,7 @@ ul.contact li a:before {
 }
 
 .waveAnimation .waveBottom {
-    animation: move_wave 15s linear infinite;
+    animation: move_wave 90s linear infinite;
 }
 
 /* buttons */
