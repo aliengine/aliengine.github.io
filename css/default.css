@@ -4,6 +4,19 @@ html, body {
     margin: 0;
     padding: 0;
 }
+/*********************
+*       SCROLL       *
+**********************/
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -377,7 +390,7 @@ ul.contact li a:before {
     background: #242424;
 }
 
-#wrapper3 {
+#service {
     overflow: hidden;
     padding: 0em 0em 8em 0em;
     background: #FFF;
@@ -432,7 +445,7 @@ ul.contact li a:before {
 
 #copyright {
     overflow: hidden;
-    padding: 2em 7em;
+    padding: 28px 20px;
     background: #3ca1fa;
     width: auto;
 }
@@ -835,12 +848,13 @@ ul.contact li a:before {
         position: absolute;
         top: 100px;
         left: -1000px;
-        background-color: white;
+        background-color: rgba(255,255,255,.95);
         display: block;
         width: 100%;
         border-top: 2px solid #23a6d5;
         border-bottom: 5px solid #23a6d5;
         transition: left 250ms linear;
+        padding: 20px 10px 20px 10px;
     }
 
     #menu ul {
