@@ -872,9 +872,10 @@ ul.contact li a:before {
     .sticky {
         position: fixed !important;
         top: 0;
+        left: -1px;
         transform: translateX(-50%);
         left: 50%;
-        width: 105% !important;
+        width: calc(100% + 1px) !important;
         background-color: rgba(0,0,0,.75);
     }
 }
