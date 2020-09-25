@@ -10,7 +10,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 12pt;
     font-weight: 400;
-    color: #042255cf;
+    color: rgb(4 34 85);;
 }
 
 h1, h2, h3 {
@@ -224,7 +224,7 @@ ul.contact li a:before {
     display: inline-block;
     margin-top: 2em;
     padding: 0.5em 1.2em 0.5em 1.2em;
-    background: #3ca1fa;
+    background: #0bc6ad;
     letter-spacing: 0.20em;
     line-height: 1.8em;
     text-decoration: none;
@@ -236,9 +236,9 @@ ul.contact li a:before {
 }
 
 .button:hover {
-    background: linear-gradient(-45deg, #1b23ad, #9ad7f3, #23a6d5, #0064ff);
-    background-size: 600% 600%;
-    animation: gradient 1s linear;
+    background: linear-gradient(-70deg, #3ca1fa, #3ca1fa, #d6f0fb, #0bc6ad);
+    background-size: 800% 800%;
+    animation: gradient 1.5s linear;
 }
 
 .button:before {
@@ -266,7 +266,7 @@ ul.contact li a:before {
 
 .title h2 {
     font-size: 2.8em;
-    color: #261300;
+    color: #042255;
 }
 
 .title .byline {
@@ -380,7 +380,8 @@ ul.contact li a:before {
 
 #wrapper4 {
     overflow: hidden;
-    padding: 8em 0em 4em 0em;
+    padding: 4em 0em 4em 0em;
+    background: #0bc6ad;
 }
 
 /*********************************************************************************/
@@ -391,7 +392,7 @@ ul.contact li a:before {
     width: auto;
     padding: 8em 100px 8em 100px;
     text-align: center;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgb(4 34 85 / 79%);
 }
 
 #welcome .content {
@@ -399,12 +400,12 @@ ul.contact li a:before {
 }
 
 #welcome .title h2 {
-    color: rgba(0, 0, 0, 0.8);
+    color: #042255;
 }
 
 #welcome a,
 #welcome strong {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgb(4 34 85);
 }
 
 /*********************************************************************************/
@@ -417,7 +418,7 @@ ul.contact li a:before {
 
 
 #footer .title span {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgb(4 34 85);
 }
 
 /*********************************************************************************/
@@ -426,8 +427,8 @@ ul.contact li a:before {
 
 #copyright {
     overflow: hidden;
-    padding: 5em 0em;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 2em 7em;
+    background: #3ca1fa;
 }
 
 #copyright p {
@@ -435,7 +436,7 @@ ul.contact li a:before {
     text-align: center;
     text-transform: uppercase;
     font-size: 0.80em;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgb(4 34 85);
 }
 
 #copyright a {
@@ -452,7 +453,8 @@ ul.contact li a:before {
 
 #portfolio .box {
     text-align: center;
-    color: #042255cf;
+    color: rgb(4 34 85);
+    background: #dedede;
 }
 
 #portfolio h3 {
@@ -468,7 +470,7 @@ ul.contact li a:before {
 }
 
 #portfolio .title h2 {
-    color: #0C44A7;
+    color: #3ca1fa;
 }
 
 .column1,
@@ -544,7 +546,7 @@ ul.contact li a:before {
 #three-column .title .byline {
     padding-top: 0.50em;
     font-size: 0.90em;
-    color: #042255cf;
+    color: rgb(4 34 85);;
 }
 
 #three-column .arrow-down {
