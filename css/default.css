@@ -522,7 +522,7 @@ ul.contact li a:before {
 #three-column #tbox3 {
     float: left;
     width: 320px;
-    padding: 80px 40px 80px 40px;
+    padding: 0px 40px 80px 40px;
 }
 
 #three-column .title {
