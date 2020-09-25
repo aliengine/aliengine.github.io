@@ -5,15 +5,17 @@
     <title>AliEngine (Web Agency - Software House)</title>
     <meta name="keywords" content="Aliengine, web agency, software house"/>
     <meta name="description" content="Aliengine is a new software house and a web agency"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet"/>
     <link href="css/default.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/all.min.css" rel="stylesheet" type="text/css" media="all"/>
 </head>
 
 <body>
 <div class="bg-gradient" id="header-cont">
     <div id="header-wrapper">
         <div id="header" class="container">
+
             <div id="logo">
                 <div class="alilogo"></div><h1><a href="#"><span>A</span>li<span>e</span>ngine</a></h1>
             </div>
@@ -25,6 +27,9 @@
                     <li class="btn u-eff"><a href="#" accesskey="3" title="">Service</a></li>
                     <li class="btn u-eff"><a href="#" accesskey="4" title="">Contact Us</a></li>
                 </ul>
+                <a href="javascript:void(0);" class="icon" onclick="topMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -66,21 +71,21 @@
 <div id="wrapper3">
     <div id="three-column" class="container">
         <div><span class="arrow-down"></span></div>
-        <div id="tbox1"><span class="icon icon-wrench"></span>
+        <div id="tbox1"><span class="icon fas fa-wrench"></span>
             <div class="title">
                 <h2>Maecenas luctus</h2>
             </div>
             <p>Nullam non wisi a sem semper eleifend. Donec mattis libero eget urna. Duis pretium velit ac suscipit
                 mauris. Proin eu wisi suscipit nulla suscipit interdum.</p>
             <a href="#" class="button">Learn More</a></div>
-        <div id="tbox2"><span class="icon icon-cogs"></span>
+        <div id="tbox2"><span class="icon fas fa-cogs"></span>
             <div class="title">
                 <h2>Integer gravida</h2>
             </div>
             <p>Proin eu wisi suscipit nulla suscipit interdum. Nullam non wisi a sem semper suscipit eleifend. Donec
                 mattis libero eget urna. Duis pretium velit ac mauris.</p>
             <a href="#" class="button">Learn More</a></div>
-        <div id="tbox3"><span class="icon icon-legal"></span>
+        <div id="tbox3"><span class="icon fas fa-gavel"></span>
             <div class="title">
                 <h2>Praesent mauris</h2>
             </div>
@@ -126,9 +131,9 @@
                     <h2>Get in touch</h2>
                     <span class="byline">Phasellus nec erat sit amet nibh pellentesque congue</span></header>
                 <ul class="contact">
-                    <li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
-                    <li><a href="#" class="icon icon-github"><span>GitHub</span></a></li>
-                    <li><a href="#" class="icon icon-linkedin"><span>LinkedIn</span></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i><span>GitHub</span></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a></li>
                 </ul>
             </div>
         </div>
@@ -139,5 +144,6 @@
     </div>
 </div>
 
+<script src="js/script.js"></script>
 </body>
 </html>

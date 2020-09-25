@@ -202,6 +202,7 @@ ul.contact li span {
 
 ul.contact li a {
     color: #FFF;
+    padding: 30px;
 }
 
 ul.contact li a:before {
@@ -280,10 +281,6 @@ ul.contact li a:before {
 /* Header                                                                        */
 /*********************************************************************************/
 
-#header-wrapper {
-    overflow: hidden;
-}
-
 #header-cont {
     height: 100vh;
     min-height: 800px;
@@ -358,12 +355,13 @@ ul.contact li a:before {
     color: #FFF;
 }
 
-#menu li:hover a, #menu li.active a, #menu li.active span {
-}
-
-#menu .current_page_item a {
-    background: #3ca1fa;
-    color: #FFF;
+#menu a.icon {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 32px;
+    font-size: 32px;
+    color: white;
 }
 
 /*********************************************************************************/
@@ -390,7 +388,6 @@ ul.contact li a:before {
 /*********************************************************************************/
 
 #welcome {
-    overflow: hidden;
     width: auto;
     padding: 8em 100px 8em 100px;
     text-align: center;
@@ -814,41 +811,71 @@ ul.contact li a:before {
 *    Device Breakpoints    *
 ****************************/
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .container {
-        width: 100%;
-        padding: 10px;
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 380px) {
+    #logo h1 {
+        display: none;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .container {
-        width: 600px;
-        padding: 10px;
+@media only screen and (max-width: 992px) {
+    #menu a.icon {
+        display: block;
     }
+    #menu.responsive ul {
+        position: absolute;
+        top: 100px;
+        left: -1000px;
+        background-color: white;
+        display: block;
+        width: 100%;
+        border-top: 2px solid #23a6d5;
+        border-bottom: 5px solid #23a6d5;
+        transition: left 250ms linear;
+    }
+
+    #menu ul {
+        display: none;
+    }
+
+    #menu li {
+        width: 100%;
+    }
+
+    #menu.responsive li a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-        padding: 10px;
-    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .container {
-        width: 990px;
-        padding: 10px;
-    }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .container {
         width: 1200px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: calc(100% - 20px);
         padding: 10px;
     }
 }
