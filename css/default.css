@@ -434,6 +434,7 @@ ul.contact li a:before {
     overflow: hidden;
     padding: 2em 7em;
     background: #3ca1fa;
+    width: auto;
 }
 
 #copyright p {
