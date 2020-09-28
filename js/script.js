@@ -22,7 +22,6 @@ const navbar = document.getElementById("header-wrapper");
 let sticky = navbar.offsetTop + 1;
 
 function onScroll() {
-    console.log(sticky, window.pageYOffset)
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
     } else {
