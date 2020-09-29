@@ -12,12 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-}
-
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 12pt;
@@ -200,11 +194,9 @@ ul.contact li a:before {
 }
 
 .alilogo {
-    background-image: url('../images/AliengineLogo2.png');
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 69px;
-    float: left;
+    width: 90px;
+    margin-top: 8px;
+
 }
 /*********************************************************************************/
 /* Menu                                                                          */
@@ -599,8 +591,6 @@ ul.contact li a:before {
 
 .waveAnimation .waveTop {
     animation: move-wave 3s;
-    -webkit-animation: move-wave 3s;
-    -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
 
@@ -618,6 +608,42 @@ ul.contact li a:before {
 
 .waveAnimation .waveBottom {
     animation: move_wave 90s linear infinite;
+}
+
+/* typewriter */
+.typewriter {
+    /*font-family: Courier, monospace;*/
+    display: inline-block;
+}
+
+.typewriter-text {
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 3s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 3px solid white;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from {
+        width: 0%
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: white;
+    }
 }
 
 /* buttons */
@@ -790,6 +816,7 @@ TEAM
         border-bottom: 5px solid #23a6d5;
         transition: left 250ms linear;
         padding: 20px 10px 20px 10px;
+        box-sizing: content-box;
     }
 
     #menu ul {
