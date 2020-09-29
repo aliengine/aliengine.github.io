@@ -876,7 +876,7 @@ ul.contact li a:before {
         transform: translateX(-50%);
         left: 50%;
         width: 105% !important;
-        background-color: rgba(0,0,0,.75);
+        background-color: rgb(0 93 175);
     }
 }
 
