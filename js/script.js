@@ -20,7 +20,7 @@ window.onload = function() {
     document.querySelector('#year').textContent = new Date().getFullYear();
 }
 
-const links = document.querySelectorAll("#menu ul li a");
+const links = document.querySelectorAll("#header a");
 
 for (const link of links) {
     link.addEventListener("click", clickHandler);
@@ -32,7 +32,7 @@ function clickHandler(e) {
     const offsetTop = document.querySelector(href).offsetTop;
 
     scroll({
-        top: offsetTop,
+        top: offsetTop - 120,
         behavior: "smooth",
         block: "start"
     });
