@@ -3,14 +3,6 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-}
-/*********************
-*       SCROLL       *
-**********************/
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -624,7 +616,7 @@ ul.contact li a:before {
     color: white;
     display: inline-block;
     font-size: 12px;
-    width: 100%;
+    width: calc(100% - 100px);
     height: 450px;
     position: absolute;
     left: 100px;
@@ -811,40 +803,6 @@ TEAM
     }
 }
 
-@media only screen and (max-width: 992px) {
-    #menu a.icon {
-        display: block;
-    }
-    #menu.responsive ul {
-        position: absolute;
-        top: 100px;
-        left: -1000px;
-        background-color: rgba(255,255,255,.95);
-        display: block;
-        width: 100%;
-        border-top: 2px solid #23a6d5;
-        border-bottom: 5px solid #23a6d5;
-        transition: left 250ms linear;
-        padding: 20px 10px 20px 10px;
-        box-sizing: content-box;
-    }
-
-    #menu ul {
-        display: none;
-    }
-
-    #menu li {
-        width: 100%;
-    }
-
-    #menu.responsive li a {
-        float: none;
-        display: block;
-        text-align: left;
-        color: black;
-    }
-}
-
 @media only screen and (max-width: 600px) {
     .col-s-1 {    flex-basis: 8.33%;}
     .col-s-2 {    flex-basis: 16.66%;}
@@ -877,7 +835,7 @@ TEAM
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1025px) {
     .sticky {
         position: fixed !important;
         top: 0;
@@ -887,7 +845,40 @@ TEAM
         background-color: rgb(33 156 237)
     }
 }
+
 @media only screen and (max-width: 1024px) {
+    #menu a.icon {
+        display: block;
+    }
+    #menu.responsive ul {
+        position: absolute;
+        top: 100px;
+        left: -1000px;
+        background-color: rgba(255,255,255,.95);
+        display: block;
+        width: 100%;
+        border-top: 2px solid #23a6d5;
+        border-bottom: 5px solid #23a6d5;
+        transition: left 250ms linear;
+        padding: 20px 10px 20px 10px;
+        box-sizing: content-box;
+    }
+
+    #menu ul {
+        display: none;
+    }
+
+    #menu li {
+        width: 100%;
+    }
+
+    #menu.responsive li a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: black;
+    }
+
     .wave {
         background-size: contain;
     }
