@@ -20,7 +20,25 @@ window.onload = function() {
     document.querySelector('#year').textContent = new Date().getFullYear();
 }
 
-const navbar = document.getElementById("header-wrapper");
+const links = document.querySelectorAll("#menu ul li a");
+
+for (const link of links) {
+    link.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e) {
+    e.preventDefault();
+    const href = this.getAttribute("href");
+    const offsetTop = document.querySelector(href).offsetTop;
+
+    scroll({
+        top: offsetTop,
+        behavior: "smooth",
+        block: "start"
+    });
+}
+
+const navbar = document.querySelector("#header-wrapper");
 let sticky = navbar.offsetTop + 1;
 
 function onScroll() {
