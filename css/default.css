@@ -446,7 +446,7 @@ ul.contact li a:before {
 #copyright {
     overflow: hidden;
     padding: 28px 20px;
-    background: #3ca1fa;
+    background: rgb(33 156 237);
     width: auto;
 }
 
@@ -891,7 +891,7 @@ ul.contact li a:before {
         transform: translateX(-50%);
         left: 50%;
         width: calc(100% + 1px) !important;
-        background-color: rgba(0,0,0,.75);
+        background-color: rgb(33 156 237);
     }
 }
 
