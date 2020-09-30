@@ -4,11 +4,15 @@
 
 Public website
 
-* https://aliengine.net
+* <https://aliengine.net> (WIP: <https://aliengine.github.io>)
 
 ## How to contribute
 
 Get detailed information on thie file [CONTRIBUTE.md](CONTRIBUTE.md)
+
+## License
+
+Creative Commons Attribution 3.0 Unported [LICENSE](LICENSE)
 
 ----
 
