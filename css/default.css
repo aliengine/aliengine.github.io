@@ -87,7 +87,7 @@ ul.contact li a:before {
 
 .button {
     display: inline-block;
-    margin-top: 2em;
+    margin-top: 1em;
     padding: 0.5em 1.2em 0.5em 1.2em;
     background: #0bc6ad;
     letter-spacing: 0.20em;
@@ -127,7 +127,7 @@ ul.contact li a:before {
 }
 
 .title h2 {
-    font-size: 2.8em;
+    font-size: 1.8em;
     color: #042255;
 }
 
@@ -295,7 +295,7 @@ ul.contact li a:before {
 #copyright {
     overflow: hidden;
     padding: 28px 20px;
-    background: rgb(33 156 237);
+    background: rgb(33, 156, 237);
     width: auto;
 }
 
@@ -679,7 +679,7 @@ ul.contact li a:before {
 
 .hilight h2 {
     color: #3ca1fa;
-    font-size: 2.8em;
+    font-size: 2.4em;
 }
 
 /***************************
@@ -851,7 +851,7 @@ TEAM
         transform: translateX(-50%);
         left: 50%;
         width: calc(100% + 1px) !important;
-        background-color: rgb(33 156 237)
+        background-color: rgb(33, 156, 237)
     }
 }
 
