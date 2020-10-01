@@ -4,25 +4,12 @@ html, body {
     margin: 0;
     padding: 0;
 }
-/*********************
-*       SCROLL       *
-**********************/
-
-html {
-    scroll-behavior: smooth;
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-}
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 12pt;
     font-weight: 400;
-    color: rgb(4 34 85);;
+    color: rgb(4, 34, 85);
 }
 
 h1, h2, h3 {
@@ -159,13 +146,14 @@ ul.contact li a:before {
 #header-cont {
     height: 100vh;
     min-height: 800px;
+    max-height: 900px;
     position: relative
 }
 
 #header-wrapper {
     height: 90px;
     transition: background-color 500ms;
-    z-index: 90;
+    z-index: 50;
 }
 
 #header {
@@ -200,11 +188,9 @@ ul.contact li a:before {
 }
 
 .alilogo {
-    background-image: url('../images/AliengineLogo2.png');
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 69px;
-    float: left;
+    width: 90px;
+    margin-top: 8px;
+
 }
 /*********************************************************************************/
 /* Menu                                                                          */
@@ -270,10 +256,10 @@ ul.contact li a:before {
 /*********************************************************************************/
 
 #welcome {
-    width: auto;
-    padding: 8em 100px 8em 100px;
+    padding: 100px 0;
     text-align: center;
-    color: rgb(4 34 85);
+    color: rgb(4, 34, 85);
+    position: relative;
 }
 
 #welcome .content {
@@ -286,7 +272,7 @@ ul.contact li a:before {
 
 #welcome a,
 #welcome strong {
-    color: rgb(4 34 85);
+    color: rgb(4, 34, 85);
 }
 
 /*********************************************************************************/
@@ -299,7 +285,7 @@ ul.contact li a:before {
 
 
 #footer .title span {
-    color: rgb(4 34 85);
+    color: rgb(4, 34, 85);
 }
 
 /*********************************************************************************/
@@ -318,7 +304,7 @@ ul.contact li a:before {
     text-align: center;
     text-transform: uppercase;
     font-size: 0.80em;
-    color: rgb(4 34 85);
+    color: rgb(4, 34, 85);
 }
 
 #copyright a {
@@ -336,7 +322,7 @@ ul.contact li a:before {
 
 .box {
     text-align: center;
-    color: rgb(4 34 85);
+    color: rgb(4, 34, 85);
     background: #dedede;
     padding: 10px 10px 50px 10px;
 }
@@ -417,7 +403,7 @@ ul.contact li a:before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: calc(100% - 20px);
     height: 100%;
     overflow: hidden;
 }
@@ -599,8 +585,6 @@ ul.contact li a:before {
 
 .waveAnimation .waveTop {
     animation: move-wave 3s;
-    -webkit-animation: move-wave 3s;
-    -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
 
@@ -618,6 +602,50 @@ ul.contact li a:before {
 
 .waveAnimation .waveBottom {
     animation: move_wave 90s linear infinite;
+}
+
+/* typewriter */
+.typewriter {
+    font-family: Courier, monospace;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 25px;
+    overflow: hidden;
+    text-align: left;
+    opacity: .7;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    width: calc(100% - 100px);
+    height: 450px;
+    position: absolute;
+    left: 100px;
+    top: 0;
+    transform: rotateZ(-5deg);
+}
+
+.typewriter-text {
+    animation: blink .75s step-end infinite;
+    border-right: 3px solid white;
+    box-sizing: border-box;
+    margin-left: 3px;
+    margin-top: -3px;
+}
+
+.dev-coder {
+    width: 300px;
+    position: absolute;
+    z-index: 10;
+    left: 20px;
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: white;
+    }
 }
 
 /* buttons */
@@ -775,39 +803,6 @@ TEAM
     }
 }
 
-@media only screen and (max-width: 992px) {
-    #menu a.icon {
-        display: block;
-    }
-    #menu.responsive ul {
-        position: absolute;
-        top: 100px;
-        left: -1000px;
-        background-color: rgba(255,255,255,.95);
-        display: block;
-        width: 100%;
-        border-top: 2px solid #23a6d5;
-        border-bottom: 5px solid #23a6d5;
-        transition: left 250ms linear;
-        padding: 20px 10px 20px 10px;
-    }
-
-    #menu ul {
-        display: none;
-    }
-
-    #menu li {
-        width: 100%;
-    }
-
-    #menu.responsive li a {
-        float: none;
-        display: block;
-        text-align: left;
-        color: black;
-    }
-}
-
 @media only screen and (max-width: 600px) {
     .col-s-1 {    flex-basis: 8.33%;}
     .col-s-2 {    flex-basis: 16.66%;}
@@ -840,7 +835,7 @@ TEAM
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1025px) {
     .sticky {
         position: fixed !important;
         top: 0;
@@ -850,7 +845,40 @@ TEAM
         background-color: rgba(0,0,0,.75);
     }
 }
+
 @media only screen and (max-width: 1024px) {
+    #menu a.icon {
+        display: block;
+    }
+    #menu.responsive ul {
+        position: absolute;
+        top: 100px;
+        left: -1000px;
+        background-color: rgba(255,255,255,.95);
+        display: block;
+        width: 100%;
+        border-top: 2px solid #23a6d5;
+        border-bottom: 5px solid #23a6d5;
+        transition: left 250ms linear;
+        padding: 20px 10px 20px 10px;
+        box-sizing: content-box;
+    }
+
+    #menu ul {
+        display: none;
+    }
+
+    #menu li {
+        width: 100%;
+    }
+
+    #menu.responsive li a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: black;
+    }
+
     .wave {
         background-size: contain;
     }
