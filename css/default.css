@@ -9,7 +9,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 12pt;
     font-weight: 400;
-    color: rgb(4 34 85);
+    color: rgb(4, 34, 85);
 }
 
 h1, h2, h3 {
@@ -258,7 +258,7 @@ ul.contact li a:before {
 #welcome {
     padding: 100px 0;
     text-align: center;
-    color: rgb(4 34 85);
+    color: rgb(4, 34, 85);
     position: relative;
 }
 
@@ -272,7 +272,7 @@ ul.contact li a:before {
 
 #welcome a,
 #welcome strong {
-    color: rgb(4 34 85);
+    color: rgb(4, 34, 85);
 }
 
 /*********************************************************************************/
@@ -285,7 +285,7 @@ ul.contact li a:before {
 
 
 #footer .title span {
-    color: rgb(4 34 85);
+    color: rgb(4, 34, 85);
 }
 
 /*********************************************************************************/
@@ -304,7 +304,7 @@ ul.contact li a:before {
     text-align: center;
     text-transform: uppercase;
     font-size: 0.80em;
-    color: rgb(4 34 85);
+    color: rgb(4, 34, 85);
 }
 
 #copyright a {
@@ -322,7 +322,7 @@ ul.contact li a:before {
 
 .box {
     text-align: center;
-    color: rgb(4 34 85);
+    color: rgb(4, 34, 85);
     background: #dedede;
     padding: 10px 10px 50px 10px;
 }
