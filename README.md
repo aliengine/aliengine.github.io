@@ -1,6 +1,7 @@
 # aliengine.github.io
 
 [![CI](https://github.com/aliengine/aliengine.github.io/workflows/CI/badge.svg)](https://github.com/aliengine/aliengine.github.io/actions)
+![Size](https://github-size-badge.herokuapp.com/aliengine/aliengine.github.io.svg)
 
 Public website
 
