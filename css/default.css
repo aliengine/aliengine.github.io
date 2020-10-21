@@ -87,7 +87,7 @@ ul.contact li a:before {
 
 .button {
     display: inline-block;
-    margin-top: 2em;
+    margin-top: 1em;
     padding: 0.5em 1.2em 0.5em 1.2em;
     background: #0bc6ad;
     letter-spacing: 0.20em;
@@ -127,7 +127,7 @@ ul.contact li a:before {
 }
 
 .title h2 {
-    font-size: 2.8em;
+    font-size: 1.8em;
     color: #042255;
 }
 
@@ -241,7 +241,7 @@ ul.contact li a:before {
 
 #service {
     overflow: hidden;
-    padding: 0 0 8em 0;
+    padding: 0 0 1em 0;
     background: #FFF;
 }
 
@@ -295,7 +295,7 @@ ul.contact li a:before {
 #copyright {
     overflow: hidden;
     padding: 28px 20px;
-    background: #3ca1fa;
+    background: rgb(33, 156, 237);
     width: auto;
 }
 
@@ -673,6 +673,15 @@ ul.contact li a:before {
     transform-origin: 0 50%;
 }
 
+.marg-0-auto {
+    margin: 0 auto!important;
+}
+
+.hilight h2 {
+    color: #3ca1fa;
+    font-size: 2.4em;
+}
+
 /***************************
 TEAM
 ***************************/
@@ -719,7 +728,7 @@ TEAM
 }
 .team .post{
     font-size: 14px;
-    color: #23a6d5;
+    color: #0bc6ad;
 }
 .team .post:after{
     content: "";
@@ -738,7 +747,7 @@ TEAM
     height: 0;
     border-width: 30px;
     border-style: solid;
-    border-color: transparent #23a6d5 #23a6d5 transparent;
+    border-color: transparent #219ced #219ced transparent;
     position: absolute;
     bottom: 0;
     right: -100%;
@@ -842,7 +851,7 @@ TEAM
         transform: translateX(-50%);
         left: 50%;
         width: calc(100% + 1px) !important;
-        background-color: rgba(0,0,0,.75);
+        background-color: rgb(33, 156, 237)
     }
 }
 
